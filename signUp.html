@@ -25,17 +25,17 @@
     <title>Sign-Up</title>
   </head>
   <body>
-    <nav class="d-flex align-items-center">
+    <nav class="d-flex align-items-center mb-5">
       <img width="40vw" src="logoNav.png" alt="" srcset="" />
       <p class="d-none d-sm-inline pt-3">Coffee Waves</p>
     </nav>
 
     <br />
-    <section class="login row w-75  form m-auto m-sm-5 w-75 position-relative">
-      <img class=" col-6 p-0 text-start loginImage" src="header.webp" alt="" />
-      <section class="px-sm-3 col-6 text-start row">
+    <section class="login row w-sm-75 form m-sm-auto mx-1">
+      <img class="col-7 p-0 text-start loginImage" src="header.webp" alt="" />
+      <section class="px-sm-3 p-0 col-5 text-start row">
         <h3 class="text-center mt-5">Hello</h3>
-        <div class="mb-2">
+        <div class="">
           <label for="userName" class="form-label">User Name</label>
           <input
             onchange="validateName(this.value)"
@@ -44,7 +44,7 @@
             class="form-control"
             id="userName"
           />
-          <span id="nameHelp"></span>
+          <span class="help" id="nameHelp"></span>
         </div>
 
         <div class="mb-3">
@@ -58,7 +58,7 @@
             id="email"
             aria-describedby="emailHelp"
           />
-          <span id="emailHelp"></span>
+          <span class="help" id="emailHelp"></span>
         </div>
 
         <div class="mb-3">
@@ -71,7 +71,7 @@
             id="password"
           />
 
-          <span style="color: gray" id="passHelp">
+          <span class="help" style="color: gray" id="passHelp">
             <ion-icon
               style="display: none; color: green"
               id="true"
@@ -88,7 +88,7 @@
             Password must be at least 8 characters
           </span>
         </div>
-        <div class="form-text text-start mb-3">
+        <div id="question" class="form-text text-start mb-3">
           Do you have an account?<a href="index.html"> Login. </a>
         </div>
 
@@ -98,7 +98,6 @@
         >
           Sign Up
         </button>
-        
       </section>
     </section>
 

@@ -39,17 +39,20 @@ label{
     /* width: 10vw; */
     /* margin: 20px; */
 }
-
+.w-sm-75{
+    width: 75vw;
+}
 @media only screen and (max-width:600px) {
-    section{
-        
-        /* background-color: aqua; */
+    .w-sm-75{
+        width: 98vw;
+    
     }
+
     .form{
         font-size: small;
-        width: 60%;
+        /* width: 60%; */
     }
-    .form a{
+    .form a,  .help,#question{
         font-size: 0.7rem;
     }
 .btn-warning{
