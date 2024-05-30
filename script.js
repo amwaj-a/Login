@@ -27,14 +27,25 @@ function load() {
 async function login() {
   let data = await fetch(url);
   let res = await data.json();
-  res.forEach((element) => {
-    if (email1.value == element.email && pass1.value == element.pass) {
-      localStorage.setItem("user", element.userName);
+  for (let element = 0; element < res.length; element++) {
+    // console.log(res[element].userName);
+    if (
+      email1.value == res[element].email &&
+      pass1.value == res[element].pass
+    ) {
+      localStorage.setItem("user", res[element].userName);
+      //   console.log("Yes");
+
       window.location.href = "home.html";
-    } else {
+
+      break;
+    } else if (
+      email1.value != res[element].email &&
+      pass1.value != res[element].pass
+    ) {
       loginerror.innerText = "email or password is incorrect";
     }
-  });
+  }
 }
 // -------------------signUp page
 async function register() {
