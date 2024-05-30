@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      header {
+        position: relative;
+        background: url("header.webp");
+        background-position-x: 70%;
+        background-position-y: 30%;
+      }
+      header::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+
+      .fs-sm-2 {
+        font-size: 4rem;
+      }
+      .btn {
+        font-size: 1.4rem;
+        margin: 10px;
+        font-weight: 500;
+      }
+
+      @media (max-width: 768px) {
+        .w-sm-100 {
+          width: 100%;
+        }
+
+        .vh-100 {
+          height: max-content !important;
+        }
+      }
+      @media (min-width: 769px) {
+        .w-lg-50 {
+          width: 50%;
+        }
+
+        .w-sm-100 {
+          width: 80%;
+          height: 90%;
+        }
+      }
+    </style>
+    <title>GUARDS</title>
+  </head>
+  <body onload="load()" class="my-0 home">
+    <div
+      class="py-3 z-2 position-relative px-2 d-flex justify-content-between align-items-center bg-black text-light"
+    >
+      <div class="d-flex align-items-center col-4">
+        <img class="col-1" src="logoNav.png" alt="" srcset="" />
+        <span class="d-none d-sm-inline"> Coffee Waves </span>
+      </div>
+
+      <span class="col-4" id="welcome"> </span>
+
+      <ion-icon
+        class="fs-3 text-warning"
+        name="log-out-outline"
+        onclick="logout()"
+      ></ion-icon>
+    </div>
+    <header class="d-flex flex-column vh-100">
+      <div class="container-fluid text-light w-75 z-3 mt-5 hed">
+        <h1 class="fw-bold fs-2 fs-sm-2 my-3 mt-5">
+          Coffee
+          <span class="text-warning"> Waves </span>
+        </h1>
+        <p class="fs-4 w-lg-50">
+          Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Ea cumque
+        </p>
+        <button class="btn btn-light text-black" type="button">
+          Read more
+        </button>
+
+        <button class="btn btn-warning text-light" type="button">
+          Get A Quote
+        </button>
+      </div>
+    </header>
+    <main class="pt-5">
+      <!-- Section About -->
+      <section class="m-5 row my-5" id="about">
+        <div class="text-end col-12 col-md-6 aboutImg">
+          <img class="w-sm-100" src="coffee.webp" alt="" />
+        </div>
+        <div class="col-12 col-md-6 align-content-center">
+          <h1 class="mb-4">
+            <span class="border-bottom border-4 border-warning">W</span>HO ARE
+            WE?
+          </h1>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            doeiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim
+            ad minim veniam, quis nostrud exercitation ullamco laborisnisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolorin
+            reprehenderit in voluptate velit
+          </p>
+          <button class="btn btn-warning text-light p-3 px-sm-5" type="button">
+            READ MORE
+          </button>
+        </div>
+      </section>
+      <!-- Section service -->
+    </main>
+    <footer class="bg-black pt-5 text-light text-center">
+      <div class="row container-fluid">
+        <div class="col text-center">
+          <h3 class="fw-bold">Waves</h3>
+          <p class=" ">
+            dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam,
+            quisdotempor incididunt r
+          </p>
+        </div>
+        <div class="col text-center">
+          <h3 class="fw-bold">Contact Us</h3>
+          <div>
+            <ion-icon name="location"></ion-icon>
+
+            <span> Lorem ipsum dolor sit </span>
+          </div>
+
+          <div>
+            <ion-icon name="mail"></ion-icon>
+
+            <span> mail@domain.com </span>
+          </div>
+        </div>
+
+        <div class="col">
+          <h3>NewsLetter</h3>
+          <input
+            type="search"
+            class="rounded-5 p-2"
+            placeholder="Enter your email"
+          />
+          <br />
+          <button class="fs-6 btn btn-warning rounded-5 text-white px-5">
+            SUBSCRIBE
+          </button>
+        </div>
+      </div>
+      <span>© 2024 All Rights Reserved. By HTML Design</span>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
+</html>

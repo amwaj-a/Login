@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: black;
+    padding: 10px;
+    color: aliceblue;
+}
+.login{
+    /* max-height: 20vh; */
+/* text-align: center; */
+overflow: hidden;
+   display: flex;
+   justify-content: space-evenly;
+
+}
+
+span{
+    
+    color: red;
+    font-size: small;
+}
+.form{
+    /* justify-content: stretch; */
+    border: 1px solid black;
+    border-radius: 10px;
+
+    /* width: 40vw; */
+}
+.loginImage{
+    position: relative;
+    left: -10px;
+}
+label{
+}
+.btn{
+    margin: auto;
+    /* width: 10vw; */
+    /* margin: 20px; */
+}
+
+@media only screen and (max-width:600px) {
+    section{
+        
+        /* background-color: aqua; */
+    }
+    .form{
+        font-size: small;
+        width: 60%;
+    }
+    .form a{
+        font-size: 0.7rem;
+    }
+.btn-warning{
+    font-size: 0.8rem!important;
+}
+    input::placeholder {
+        color: gray;
+        font: 0.8rem sans-serif;
+    }
+}
